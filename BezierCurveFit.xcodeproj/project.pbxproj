@@ -13,6 +13,7 @@
 		A63665AD196C134C009FE8C4 /* NSBezierPath+FitCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = A63665AA196C134C009FE8C4 /* NSBezierPath+FitCurve.m */; };
 		A63665AE196C134C009FE8C4 /* NSBezierPath+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = A63665AC196C134C009FE8C4 /* NSBezierPath+Utilities.m */; };
 		A63665B1196C1358009FE8C4 /* Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = A63665B0196C1358009FE8C4 /* Geometry.m */; };
+		A63665B7196C1922009FE8C4 /* points.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = A63665B2196C16D1009FE8C4 /* points.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,16 @@
 				A63665A3196C132F009FE8C4 /* BezierCurveFit.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
+		};
+		A63665B6196C1918009FE8C4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				A63665B7196C1922009FE8C4 /* points.txt in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -40,6 +51,7 @@
 		A63665AC196C134C009FE8C4 /* NSBezierPath+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+Utilities.m"; sourceTree = "<group>"; };
 		A63665AF196C1358009FE8C4 /* Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Geometry.h; sourceTree = "<group>"; };
 		A63665B0196C1358009FE8C4 /* Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Geometry.m; sourceTree = "<group>"; };
+		A63665B2196C16D1009FE8C4 /* points.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = points.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +102,7 @@
 				A63665AA196C134C009FE8C4 /* NSBezierPath+FitCurve.m */,
 				A63665AB196C134C009FE8C4 /* NSBezierPath+Utilities.h */,
 				A63665AC196C134C009FE8C4 /* NSBezierPath+Utilities.m */,
+				A63665B2196C16D1009FE8C4 /* points.txt */,
 				A63665A0196C132F009FE8C4 /* Supporting Files */,
 			);
 			path = BezierCurveFit;
@@ -113,6 +126,7 @@
 				A6366594196C132F009FE8C4 /* Sources */,
 				A6366595196C132F009FE8C4 /* Frameworks */,
 				A6366596196C132F009FE8C4 /* CopyFiles */,
+				A63665B6196C1918009FE8C4 /* CopyFiles */,
 			);
 			buildRules = (
 			);
