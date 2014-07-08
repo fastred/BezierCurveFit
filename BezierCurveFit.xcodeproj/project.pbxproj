@@ -10,6 +10,9 @@
 		A636659C196C132F009FE8C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A636659B196C132F009FE8C4 /* Foundation.framework */; };
 		A636659F196C132F009FE8C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A636659E196C132F009FE8C4 /* main.m */; };
 		A63665A3196C132F009FE8C4 /* BezierCurveFit.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = A63665A2196C132F009FE8C4 /* BezierCurveFit.1 */; };
+		A63665AD196C134C009FE8C4 /* NSBezierPath+FitCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = A63665AA196C134C009FE8C4 /* NSBezierPath+FitCurve.m */; };
+		A63665AE196C134C009FE8C4 /* NSBezierPath+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = A63665AC196C134C009FE8C4 /* NSBezierPath+Utilities.m */; };
+		A63665B1196C1358009FE8C4 /* Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = A63665B0196C1358009FE8C4 /* Geometry.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +34,12 @@
 		A636659E196C132F009FE8C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A63665A1196C132F009FE8C4 /* BezierCurveFit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BezierCurveFit-Prefix.pch"; sourceTree = "<group>"; };
 		A63665A2196C132F009FE8C4 /* BezierCurveFit.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = BezierCurveFit.1; sourceTree = "<group>"; };
+		A63665A9196C134C009FE8C4 /* NSBezierPath+FitCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+FitCurve.h"; sourceTree = "<group>"; };
+		A63665AA196C134C009FE8C4 /* NSBezierPath+FitCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+FitCurve.m"; sourceTree = "<group>"; };
+		A63665AB196C134C009FE8C4 /* NSBezierPath+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+Utilities.h"; sourceTree = "<group>"; };
+		A63665AC196C134C009FE8C4 /* NSBezierPath+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+Utilities.m"; sourceTree = "<group>"; };
+		A63665AF196C1358009FE8C4 /* Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Geometry.h; sourceTree = "<group>"; };
+		A63665B0196C1358009FE8C4 /* Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Geometry.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +82,14 @@
 		A636659D196C132F009FE8C4 /* BezierCurveFit */ = {
 			isa = PBXGroup;
 			children = (
-				A636659E196C132F009FE8C4 /* main.m */,
 				A63665A2196C132F009FE8C4 /* BezierCurveFit.1 */,
+				A63665AF196C1358009FE8C4 /* Geometry.h */,
+				A63665B0196C1358009FE8C4 /* Geometry.m */,
+				A636659E196C132F009FE8C4 /* main.m */,
+				A63665A9196C134C009FE8C4 /* NSBezierPath+FitCurve.h */,
+				A63665AA196C134C009FE8C4 /* NSBezierPath+FitCurve.m */,
+				A63665AB196C134C009FE8C4 /* NSBezierPath+Utilities.h */,
+				A63665AC196C134C009FE8C4 /* NSBezierPath+Utilities.m */,
 				A63665A0196C132F009FE8C4 /* Supporting Files */,
 			);
 			path = BezierCurveFit;
@@ -139,7 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A63665AD196C134C009FE8C4 /* NSBezierPath+FitCurve.m in Sources */,
+				A63665B1196C1358009FE8C4 /* Geometry.m in Sources */,
 				A636659F196C132F009FE8C4 /* main.m in Sources */,
+				A63665AE196C134C009FE8C4 /* NSBezierPath+Utilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
