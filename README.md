@@ -1,0 +1,1 @@
+A tool that performs fitting of a Bézier curve to given data points. Adjust the points in `points.txt` and Run the project. The curve will be printed to the console.
