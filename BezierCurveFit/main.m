@@ -85,6 +85,8 @@ int main(int argc, const char * argv[])
 
                         if (element == NSMoveToBezierPathElement) {
                             NSLog(@"Move to Point: %@", NSStringFromPoint(pointArray[0]));
+                        } else if (element == NSLineToBezierPathElement) {
+                            NSLog(@"Line to Point: %@", NSStringFromPoint(pointArray[0]));
                         } else if (element == NSCurveToBezierPathElement) {
                             NSLog(@"Curve;\nControl Point 1: %@,\nControl Point 2: %@,\nEnd Point: %@", NSStringFromPoint(pointArray[0]), NSStringFromPoint(pointArray[1]), NSStringFromPoint(pointArray[2]));
                         }
