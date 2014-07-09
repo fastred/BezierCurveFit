@@ -46,27 +46,33 @@ NSArray * pointsFromFileAtURL(NSURL *fileURL) {
     return [points copy];
 }
 
+/// Constructs a path consisting of straight lines between data points.
+NSBezierPath * pathWithStraightLinesFromPoints(NSArray *points)
+{
+    NSBezierPath *path = [NSBezierPath bezierPath];
+
+    [points enumerateObjectsUsingBlock:^(NSValue *value, NSUInteger idx, BOOL *stop) {
+        NSPoint point = [value pointValue];
+
+        if (idx == 0) {
+            [path moveToPoint:point];
+        } else {
+            [path lineToPoint:point];
+        }
+    }];
+
+    return path;
+}
+
 int main(int argc, const char * argv[])
 {
     @autoreleasepool {
         NSURL *url = [[NSBundle mainBundle] URLForResource:@"points" withExtension:@"txt"];
         NSArray *points = pointsFromFileAtURL(url);
-
-        NSBezierPath *path = [NSBezierPath bezierPath];
-
-        [points enumerateObjectsUsingBlock:^(NSValue *value, NSUInteger idx, BOOL *stop) {
-            NSPoint point = [value pointValue];
-
-            if (idx == 0) {
-                [path moveToPoint:point];
-            } else {
-                [path lineToPoint:point];
-            }
-        }];
+        NSBezierPath *path = pathWithStraightLinesFromPoints(points);
 
         // Finds a cubic Bezier curve with the smallest error.
-        // You may need to adjust the error range if you're trying to fit a curve with a bounding box different than [(0,0) (100, 100)].
-
+        // You may need to adjust the errorTreshold starting point and step if you're trying to fit a curve with a bounding box different than [(0,0) (100, 100)].
         for (float errorTreshold = 0; true; errorTreshold += 0.1) {
             NSBezierPath *newPath = [path fb_fitCurve:errorTreshold];
             if ([newPath elementCount] == 2) {
