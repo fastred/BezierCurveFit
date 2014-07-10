@@ -73,6 +73,7 @@ int main(int argc, const char * argv[])
 
         // Finds a cubic Bezier curve with the smallest error.
         // You may need to adjust the errorTreshold starting point and step if you're trying to fit a curve with a bounding box different than [(0,0) (100, 100)].
+        // Sidenote: the code in fb_fitCubicToRange:leftTangent:rightTangent:errorThreshold: could be changed, so that it always fits a cubic Bezier curve. It was working fast, though, so I left it intact and decided to just loop through the results until the cubic curve is returned.
         for (float errorTreshold = 0; true; errorTreshold += 0.1) {
 
             @autoreleasepool {
